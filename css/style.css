@@ -29,3 +29,39 @@ li a {
 li a:hover{
     background-color: blue;
 }
+
+li a:visited{
+    background-color: orange;
+}
+
+.box{
+    width:50px;
+    background-color: lightgreen;
+    border:1px solid red;
+    margin:10px;
+    min-height: 50px;
+}
+
+.container{
+    background-color: tomato;
+    border: 1px solid black;
+}
+
+
+
+p::after{
+    content:'Read this >> ';
+    padding:10px;
+    background: orange;
+}
+
+p::first-line{
+    text-transform: uppercase;
+    font-size: 24px;
+    font-family: serif;
+    text-decoration: line-through;
+}
+
+.center{
+    text-align: right;
+}

@@ -60,29 +60,48 @@
             min-width: 80%;
             float: right;
             background: deepskyblue;
-            height: 500px;
+            height: auto;
         }
         section div a {
             background: dodgerblue;
             border-radius: 50%;
         }
         .box{
-            width:400px;
-            height: 50px;
+            width:100px;
+            height: 100px;
+            min-width: 100px;
             margin:20px;
             background: darkolivegreen;
             overflow: hidden;
             box-sizing: border-box;
             padding:20px;
+            align-items: center;
             border:10px solid black;
+            
         }
+    }
+
+    .container{
+         display: flex;
+         flex-direction: row;
+         justify-content:space-between ;
+         flex-wrap: wrap;
+         flex-grow: 2;
+         flex-shrink: 2;
     }
     img{
         object-fit: cover;
 
     }
 
+   /* .box:nth-of-type(even){
+        align-self: center;
+    }*/
+
     </style>
+    <script>
+        console.log("Hi");;
+    </script>
 </head>
 
 <body>
@@ -104,6 +123,11 @@
     </aside>
     <div class="wrapper">
         <div class="container">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
             <div class="box"></div>
             <div class="box"></div>
             <div class="box"></div>

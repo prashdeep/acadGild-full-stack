@@ -1,1 +1,57 @@
-<h1>About</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        div{
+            margin:20px;
+            display: inline-block;
+        }
+        .gradient{
+            width:100px; 
+            height:100px; 
+            background-color:green;
+            background: linear-gradient(to right, red, yellow);
+        }
+
+        .shadow{
+            width:100px; 
+            height:100px; 
+            background-color:green;
+            box-shadow: 10px 20px blue;
+        }
+        .trasform{
+            width:100px; 
+            height:100px; 
+            
+            background-color:greenyellow;
+        }   
+        
+        .trasform:hover{
+            background: firebrick;
+            width: 600px;
+            height: 600px;
+            transition-timing-function: ease-in;
+            transition-delay: 5ms;
+            transform: scale(40%);
+            transform: rotate(50deg)
+        }
+    </style>
+</head>
+<body>
+        <h1>About</h1>
+
+        <div style="width:100px; height:100px; background-color:tomato">
+        </div>
+        
+        <div class="gradient"></div> 
+        
+        <div class="shadow"></div>    
+
+        <div class="trasform"></div>
+</body>
+</html>
