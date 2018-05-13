@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AJAX example</title>
+<script>
+
+	function makeAjaxCall(){
+	var xmlhttp = new XMLHttpRequest();
+	xmlhttp.open("GET", "https://jsonplaceholder.typicode.com/posts/1", true);
+	xmlhttp.send();
+	//alert("This should be printed");
+	xmlhttp.onreadystatechange= function(){
+		console.log(xmlhttp.readyState);
+		if(xmlhttp.readyState  === 4 && xmlhttp.status ===200 ){
+			console.log(xmlhttp.readyState);
+			console.log(xmlhttp.status);
+			document.getElementById("table").appendChild("<tr> <td> "+ xmlhttp.response+"</td></tr>");
+		}
+	}
+}
+</script>	
+</head>
+<body>
+
+	<button onclick="makeAjaxCall()">Click Me!!</button>
+
+	<table id="table">
+		
+	</table>
+
+	<div id="panel" style="width:100px; height:100px; background-color: tomato;font-size: 14px;color:#fff; margin-bottom: 40px; overflow: hidden">
+	</div>
+
+
+	<div id="panel2" style="width:100px; height:100px; background-color: tomato;font-size: 14px;color:#fff">
+	</div>
+
+
+</body>
+</html>

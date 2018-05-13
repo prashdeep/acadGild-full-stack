@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>UStore</title>
+    <script>
+        function handleSubmit(){
+            console.log("came inside the handleSUbmit funciton");
+            document.getElementsByTagName("footer")[0].innerHTML="Test";
+            document.getElementsByTagName("footer")[0].style.padding="10px";
+            document.getElementsByTagName("footer")[0].style.backgroundColor="red";
+            document.getElementsByTagName("footer")[0].style.color="white";
+        }
+        
+    </script>
 </head>
 <body>
     <header>
@@ -53,11 +63,11 @@
 
             <input type="radio" name="gender" id="" value="male">Male
             <input type="radio" name="gender" id="" value="female">Female
-            <input type="submit" value="Submit">
-            <button type="submit" disabled>Submit</button>
+            
+            <button id="submit" type="button" onclick="handleSubmit()">Submit</button>
         </form>
     </div>
-    <footer>
+    <footer id="footer">
         &copy;Copyright - 2018. All rights reserved
     </footer>
 </body>
